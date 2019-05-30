@@ -1,0 +1,32 @@
+{
+  "name": "webpack-react-boilerplate",
+  "version": "0.0.1",
+  "author": {
+    "name": "nataliekate"
+  },
+  "description": "A boilerplate for react with webpack and babel",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "1.17.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/**/*.{js,jsx,html}",
+    "develop": "webpack-dev-server --open",
+    "build": "webpack --mode production && prettier --write index.html"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
